@@ -16,8 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-LLVM_PATH ?= external/llvm
-LLVM_ROOT_PATH := $(LLVM_PATH)
+LLVM_ROOT_PATH := $(call get_llvm_root_path)
 
 #=============================================================================
 # android librsloader for libbcc (Device)
